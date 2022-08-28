@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Basics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>HTML is at the core of every web page. Behind every web page you've ever visited there is HTML code that
+                your web browser uses to display elements like text, images and tables. </p>
+            <p>Web browsers read HTML documents (containing HTML code) to display the resulting web page.</p>
+            <p>An HTML document can include different elements such as text headings, paragraphs, images or tables.
+                These elements are defined using different tags.</p>
+        </section>
+
+        <section class="main-section" id="Elements">
+            <header>Elements</header>
+            <p>An HTML element is defined by a start tag, some content, and an end tag.
+                To familiarize you, the tag is actually made up of these symbols: &lt; and &gt; </p>
+            <p>Let's imagine a paragraph, for example, in Html it is indicated by the letter p, inside the tags (&lt;p
+                &gt;). The paragraph content will be placed inside the opening and closing tags, like this:</p>
+            <article> &lt;p &gt; paragraph content &lt;/p&gt;</article>
+            <p>There are numerous elements that make up an HTML file that have the same structure: an opening tag before
+                and a closing tag, after within the / symbol.</p>
+            <p>However, there are elements in HTML called void elements, such as images and links, that do not strictly
+                require closing tags because of their inherent structure. Experts claim that things like images and
+                links do not need and/or cannot have content – they are just kind of pointers to an element that is
+                installed in the page. See some examples;</p>
+            <article> &lt;img src="img_girl.jpg"/&gt;</article>
+            <p>In the example above, the image element (img) contains an src (source) attribute that indicates the
+                source of the image to be included. It does not need, therefore, other content.</p>
+        </section>
+
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's
+                opening tag. All attributes are made up of two parts − a name and a value </p>
+            <ul>
+
+                <li>The name is the property you want to set, it appears after the element name inside the open tag,
+                    and, without space the = signal</li>
+                <li>The value is what you want the value of the property to be set and always put within quotations,
+                    after the = signal. </li>
+            </ul>
+            <article> Exemple &lt;p class="introduction" &gt; </article>
+            <p>ATENTION: Attribute names and attribute values are case-insensitive.</p>
+        </section>
+
+        <section class="main-section" id="Core_Attributes">
+            <header>Core Attributes</header>
+
+            <p> The four core attributes that can be used on the majority of HTML elements (although not all) are</p>
+
+            <table style="width:100%">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Definition</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>The ID attribute uniquely identifies an element within a document. No two elements can have the
+                        same ID value in a single document. The attribute’s value must begin with a letter in the range
+                        A-Z or a-z and may be followed by letters (A-Za-z), digits (0-9), hyphens (“-“), underscores
+                        (“_”), colons (“:”), and periods (“.”). The value is case-sensitive.</td>
+                    <td>&lt;p id="firstp">My first paragraph.&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>CLASS</td>
+                    <td>The CLASS attribute specifies the element to be a member of one or more classes. Classes allow
+                        authors to define specific kinds of a given element, like style in CSS. The CLASS attribute
+                        value is a space-separated list of class names. The value is case-sensitive.</td>
+                    <td>&lt;p class="important">Paragraph with important information.&lt;/p&gt</td>
+                </tr>
+                <tr>
+                    <td>LANG</td>
+                    <td>The lang attribute allows you to indicate the main language used in a document, but this
+                        attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This
+                        attribute has been replaced by the xml:lang attribute in new XHTML documents.</td>
+                    <td>&lt;html lang = "en"&gt;</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section class="main-section" id="Src_attribute">
+            <header>SRC Attribute</header>
+            <p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to
+                the image to be displayed: </p>
+
+            <article> &lt;img src="img_girl.jpg"/&gt;</article>
+            <p>There are two ways to specify the URL in the src attribute:</p>
+            <ol>
+                <li><b>Absolute URL -</b> Links to an external image that is hosted on another website. Example:
+                    src="https://www.w3schools.com/images/img_girl.jpg"</li>
+                <li><b>Relative URL - </b> Links to an image that is hosted within the website. Here, the URL does not
+                    include the domain name. If the URL begins without a slash, it will be relative to the current page.
+                    Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain.
+                    Example: src="/images/img_girl.jpg".</li>
+                <li>Notes: External images might be under copyright. If you do not get permission to use it, you may be
+                    in
+                    violation of copyright laws. In addition, you cannot control external images; it can suddenly be
+                    removed
+                    or changed.</li>
+            </ol>
+
+
+        </section>
+    </main>
+
+    <nav id="navbar">
+        <header>HTML Basics</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Elements">Elements</a>
+        <a class="nav-link" href="#Attributes">Attributes</a>
+        <a class="nav-link" href="#Core_Attributes">Core_Attributes</a>
+        <a class="nav-link" href="#Src_attribute">SRC attribute</a>
+
+    </nav>
+</body>
+
+</html>
