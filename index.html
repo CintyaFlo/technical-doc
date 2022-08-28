@@ -12,7 +12,7 @@
 
 <body>
     <nav id="navbar">
-        <header>HTML Basics</header>
+        <header id="initial">H T M L - Basics</header>
         <a class="nav-link" href="#Introduction">Introduction</a>
         <a class="nav-link" href="#Elements">Elements</a>
         <a class="nav-link" href="#Attributes">Attributes</a>
@@ -21,6 +21,7 @@
 
     </nav>
     <main id="main-doc">
+
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <p>HTML is at the core of every web page. Behind every web page you've ever visited there is HTML code that
@@ -36,14 +37,14 @@
                 To familiarize you, the tag is actually made up of these symbols: &lt; and &gt; </p>
             <p>Let's imagine a paragraph, for example, in Html it is indicated by the letter p, inside the tags (&lt;p
                 &gt;). The paragraph content will be placed inside the opening and closing tags, like this:</p>
-            <article> &lt;p &gt; paragraph content &lt;/p&gt;</article>
+            <article> <code>&lt;p &gt; paragraph content &lt;/p&gt;</code> </article>
             <p>There are numerous elements that make up an HTML file that have the same structure: an opening tag before
                 and a closing tag, after within the / symbol.</p>
             <p>However, there are elements in HTML called void elements, such as images and links, that do not strictly
                 require closing tags because of their inherent structure. Experts claim that things like images and
                 links do not need and/or cannot have content – they are just kind of pointers to an element that is
                 installed in the page. See some examples;</p>
-            <code>&lt;img src="img_girl.jpg"/&gt;</code>
+            <article><code>&lt;img src="img_girl.jpg"/&gt;</code></article>
             <p>In the example above, the image element (img) contains an src (source) attribute that indicates the
                 source of the image to be included. It does not need, therefore, other content.</p>
         </section>
@@ -59,7 +60,7 @@
                 <li>The value is what you want the value of the property to be set and always put within quotations,
                     after the = signal. </li>
             </ul>
-            <code> Exemple &lt;p class="introduction" &gt; </code>
+            <article><code>&lt;p class="introduction" &gt; </code></article>
             <p>ATENTION: Attribute names and attribute values are case-insensitive.</p>
         </section>
 
@@ -106,21 +107,25 @@
                 the path to
                 the image to be displayed: </p>
 
-            <code> &lt;img src="img_girl.jpg"/&gt;</code>
+            <article><code> &lt;img src="img_girl.jpg"/&gt;</code></article>
             <p>There are two ways to specify the URL in the src attribute:</p>
             <ol>
                 <li><b>Absolute URL -</b> Links to an external image that is hosted on another website. Example:
                     <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>
                 </li>
                 <li><b>Relative URL - </b> Links to an image that is hosted within the website. Here, the URL does not
-                    include the domain name. If the URL begins without a slash, it will be relative to the current page.
-                    Example: <code>src="img_girl.jpg"</code> . If the URL begins with a slash, it will be relative to
-                    the domain.
-                    Example: <code> src="/images/img_girl.jpg"</code>.</li>
-                <li>Notes: External images might be under copyright. If you do not get permission to use it, you may be
-                    in violation of copyright laws. In addition, you cannot control external images; it can suddenly be
-                    removed or changed.</li>
+                    include the domain name. If the URL begins without a slash, it will be relative to the current
+                    page.Example:
+                    <article><code>src="img_girl.jpg"</code> </article>
+                </li>
             </ol>
+            <p>If the URL begins with a slash, it will be relative to
+                the domain.Example:
+            <article><code> src="/images/img_girl.jpg"</code></article>
+            </p>
+            <p>Notes: External images might be under copyright. If you do not get permission to use it, you may be
+                in violation of copyright laws. In addition, you cannot control external images; it can suddenly be
+                removed or changed.</p>
 
 
         </section>

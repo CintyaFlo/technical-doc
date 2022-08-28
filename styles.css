@@ -1,14 +1,16 @@
 :root {
   --color-bg1: #fcd0ba;
-  --color-bg2: #765d68;
+  --color-bg2: #392d32;
   --color-bg3: #fefad4;
   --color-font1: #231d20;
   --color-shadow: #c35e68;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 html {
@@ -17,8 +19,66 @@ html {
 
 body {
   width: 100%;
-  padding: 4%;
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px 0;
+}
+#initial {
+  text-align: center;
+}
+p {
+  padding: 2px;
+  margin-bottom: 8px;
+}
+ul,
+ol {
+  padding-left: 40px;
+  margin: 7px;
+}
+li {
+  line-height: 2.8rem;
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px var(--color-bg2);
+  background-color: var(--color-bg2);
+  color: var(--color-bg1);
+  position: fixed;
+  height: 100%;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.nav-link {
+  border: 1px solid var(--color-bg1);
+  color: var(--color-bg3);
+  font-size: 1.8rem;
+  padding: 2% 3%;
+}
+
+main {
+  width: 70%;
+  border: 1px solid green;
+  padding: 0 1%;
+  background-color: var(--color-bg3);
+  margin-left: 30%;
+}
+code {
+  border: 1px solid var(--color-bg1);
+  background-color: var(--color-bg2);
+  color: var(--color-bg3);
+  padding: 3px 5px;
+  line-height: 2.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+article {
+  text-align: center;
+  margin-bottom: 10px;
 }
