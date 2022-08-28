@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <header>HTML Basics</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Elements">Elements</a>
+        <a class="nav-link" href="#Attributes">Attributes</a>
+        <a class="nav-link" href="#Core_Attributes">Core Attributes</a>
+        <a class="nav-link" href="#SRC_attribute">SRC attribute</a>
+
+    </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
@@ -34,7 +43,7 @@
                 require closing tags because of their inherent structure. Experts claim that things like images and
                 links do not need and/or cannot have content – they are just kind of pointers to an element that is
                 installed in the page. See some examples;</p>
-            <article> &lt;img src="img_girl.jpg"/&gt;</article>
+            <code>&lt;img src="img_girl.jpg"/&gt;</code>
             <p>In the example above, the image element (img) contains an src (source) attribute that indicates the
                 source of the image to be included. It does not need, therefore, other content.</p>
         </section>
@@ -50,7 +59,7 @@
                 <li>The value is what you want the value of the property to be set and always put within quotations,
                     after the = signal. </li>
             </ul>
-            <article> Exemple &lt;p class="introduction" &gt; </article>
+            <code> Exemple &lt;p class="introduction" &gt; </code>
             <p>ATENTION: Attribute names and attribute values are case-insensitive.</p>
         </section>
 
@@ -71,60 +80,53 @@
                         same ID value in a single document. The attribute’s value must begin with a letter in the range
                         A-Z or a-z and may be followed by letters (A-Za-z), digits (0-9), hyphens (“-“), underscores
                         (“_”), colons (“:”), and periods (“.”). The value is case-sensitive.</td>
-                    <td>&lt;p id="firstp">My first paragraph.&lt;/p&gt;</td>
+                    <td> <code>&lt;p id="firstp">My first paragraph.&lt;/p&gt;</code></td>
                 </tr>
                 <tr>
                     <td>CLASS</td>
                     <td>The CLASS attribute specifies the element to be a member of one or more classes. Classes allow
                         authors to define specific kinds of a given element, like style in CSS. The CLASS attribute
                         value is a space-separated list of class names. The value is case-sensitive.</td>
-                    <td>&lt;p class="important">Paragraph with important information.&lt;/p&gt</td>
+                    <td><code>&lt;p class="important">Paragraph with important information.&lt;/p&gt</code></td>
                 </tr>
                 <tr>
                     <td>LANG</td>
                     <td>The lang attribute allows you to indicate the main language used in a document, but this
                         attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This
                         attribute has been replaced by the xml:lang attribute in new XHTML documents.</td>
-                    <td>&lt;html lang = "en"&gt;</td>
+                    <td><code>&lt;html lang = "en"&gt;</code></td>
                 </tr>
             </table>
 
         </section>
 
-        <section class="main-section" id="Src_attribute">
+        <section class="main-section" id="SRC_attribute">
             <header>SRC Attribute</header>
-            <p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to
+            <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The src attribute specifies
+                the path to
                 the image to be displayed: </p>
 
-            <article> &lt;img src="img_girl.jpg"/&gt;</article>
+            <code> &lt;img src="img_girl.jpg"/&gt;</code>
             <p>There are two ways to specify the URL in the src attribute:</p>
             <ol>
                 <li><b>Absolute URL -</b> Links to an external image that is hosted on another website. Example:
-                    src="https://www.w3schools.com/images/img_girl.jpg"</li>
+                    <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>
+                </li>
                 <li><b>Relative URL - </b> Links to an image that is hosted within the website. Here, the URL does not
                     include the domain name. If the URL begins without a slash, it will be relative to the current page.
-                    Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain.
-                    Example: src="/images/img_girl.jpg".</li>
+                    Example: <code>src="img_girl.jpg"</code> . If the URL begins with a slash, it will be relative to
+                    the domain.
+                    Example: <code> src="/images/img_girl.jpg"</code>.</li>
                 <li>Notes: External images might be under copyright. If you do not get permission to use it, you may be
-                    in
-                    violation of copyright laws. In addition, you cannot control external images; it can suddenly be
-                    removed
-                    or changed.</li>
+                    in violation of copyright laws. In addition, you cannot control external images; it can suddenly be
+                    removed or changed.</li>
             </ol>
 
 
         </section>
     </main>
 
-    <nav id="navbar">
-        <header>HTML Basics</header>
-        <a class="nav-link" href="#Introduction">Introduction</a>
-        <a class="nav-link" href="#Elements">Elements</a>
-        <a class="nav-link" href="#Attributes">Attributes</a>
-        <a class="nav-link" href="#Core_Attributes">Core_Attributes</a>
-        <a class="nav-link" href="#Src_attribute">SRC attribute</a>
 
-    </nav>
 </body>
 
 </html>

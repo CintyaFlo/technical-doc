@@ -1,0 +1,21 @@
+:root {
+  --color-bg1: #fcd0ba;
+  --color-bg2: #765d68;
+  --color-bg3: #fefad4;
+  --color-font1: #231d20;
+  --color-shadow: #c35e68;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  padding: 4%;
+}
