@@ -84,3 +84,16 @@ a:hover {
   background-color: var(--color-shadow);
   color: var(--color-bg1);
 }
+@media only screen and (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+}
